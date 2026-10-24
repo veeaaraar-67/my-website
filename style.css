@@ -1,0 +1,71 @@
+/*
+  This is a CSS file. CSS describes how the page LOOKS:
+  colors, sizes, spacing, fonts.
+  Each block says: "for THIS part of the page, use THESE styles."
+*/
+
+/* "body" means the whole page. */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;               /* these 3 lines center the card */
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, sans-serif;
+  background: linear-gradient(135deg, #a8e6a1, #d4f5c9); /* try changing these colors! */
+  color: #222;
+}
+
+/* ".card" means anything with class="card" (our white box). */
+.card {
+  background: white;
+  max-width: 480px;
+  margin: 24px 16px;
+  padding: 32px;
+  border-radius: 16px;          /* rounded corners */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;           /* 50% turns a square into a circle */
+  background: #eef;
+}
+
+h1 {
+  margin: 16px 0 4px;
+}
+
+.tagline {
+  color: #666;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-top: 28px;
+  color: #2e8b57;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 4px 0;
+}
+
+/* Centers the initials inside the circle. */
+.photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  background: #2e8b57;
+}
